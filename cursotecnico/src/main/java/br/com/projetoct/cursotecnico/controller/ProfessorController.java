@@ -73,12 +73,4 @@ public class ProfessorController {
         model.addAttribute("professor", professor);
         return "professor/visualizarProfessor";
     }
-
-    @GetMapping("/teste")
-        @ResponseBody
-        public String teste() {
-            Professor p = new Professor(null, "Teste", "Rua A", "Mestre", "Efetivo");
-            professorService.save(p);
-            return "Salvo com sucesso!";
-        }
 }
