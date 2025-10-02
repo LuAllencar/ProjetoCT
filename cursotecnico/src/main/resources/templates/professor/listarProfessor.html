@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="estilo.css">
     <title>Lista de Professores</title>
 </head>
 <body>
@@ -27,12 +28,12 @@
                 <td th:text="${professor.categoriaProfessor}"></td>
 
                 <td>
-                    <a th:href="@{/professores/editar/{id}(id=${professor.idProfessor})}">Detalhes</a>
                     <a th:href="@{/professores/editar/{id}(id=${professor.idProfessor})}">Editar</a>
                     <a th:href="@{/professores/excluir/{id}(id=${professor.idProfessor})}">Excluir</a>
                 </td>
             </tr>
         </tbody>
     </table>
+    <a href="../index.html">Voltar</a>
 </body>
 </html>
