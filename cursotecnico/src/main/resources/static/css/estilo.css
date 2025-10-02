@@ -1,13 +1,9 @@
-/* estilo.css */
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
@@ -16,12 +12,19 @@ body {
     line-height: 1.6;
 }
 
-/* Títulos */
 h1 {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: #2c3e50;
+}
+
+.title{
+    border-radius: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-shadow: #3498db;
+    text-decoration: dashed;
 }
 
 /* Navegação */
@@ -71,6 +74,7 @@ a:hover {
 /* Botões específicos */
 a[href="/professores/criar"] {
     background-color: #27ae60;
+    
 }
 
 a[href="/professores/criar"]:hover {
@@ -100,6 +104,7 @@ table {
     margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 5px;
 }
 
 th, td {
@@ -171,6 +176,7 @@ button[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
 
 button[type="submit"]:hover {
@@ -208,4 +214,15 @@ button[type="submit"]:hover {
         margin: 10px 0;
         text-align: center;
     }
+}
+
+.option{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+.meio{
+    text-align: center;
+    justify-content: center;
 }

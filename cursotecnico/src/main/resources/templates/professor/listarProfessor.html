@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="estilo.css">
     <title>Lista de Professores</title>
+    <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
     <h1>Lista de Professores</h1>
+    <div class="meio">
     <a href="/professores/criar">Novo Professor</a>
+    </div>
     <table border="1">
         <thead>
             <tr>
@@ -15,7 +17,6 @@
                 <th>Endereço</th>
                 <th>Graduação</th>
                 <th>Categoria</th>
-                <th>Detalhes</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -34,6 +35,6 @@
             </tr>
         </tbody>
     </table>
-    <a href="../index.html">Voltar</a>
+    <a href="/">Voltar</a>
 </body>
 </html>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <title>Cadastro de Professor</title>
+    <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
-    <h1>Cadastro de Professor</h1>
+    <div class="title">
+        <h1>Cadastro de Professor</h1>
+    </div>
+    
 
     <form th:action="@{/professores/salvar}" th:object="${professor}" method="post">
         <input type="hidden" th:field="*{idProfessor}" />
@@ -27,9 +30,10 @@
         <input type="text" id="categoria" th:field="*{categoriaProfessor}" required />
         <br/>
 
+        <div class="option">
         <button type="submit">Salvar</button>
         <a href="/professores/listar">Cancelar</a>
-        <a href="../index.html">Voltar</a>
+        </div>
     </form>
 </body>
 </html>
