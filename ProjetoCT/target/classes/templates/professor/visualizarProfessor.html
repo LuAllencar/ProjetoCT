@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Visualizar Professor</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Detalhes do Professor</h1>
+
+    <div>
+        <strong>ID:</strong>
+        <span th:text="${professor.idProfessor}"></span>
+    </div>
+    <div>
+        <strong>Nome:</strong>
+        <span th:text="${professor.nomeProfessor}"></span>
+    </div>
+    <div>
+        <strong>Endereço:</strong>
+        <span th:text="${professor.enderecoProfessor}"></span>
+    </div>
+    <div>
+        <strong>Graduação:</strong>
+        <span th:text="${professor.graduacaoProfessor}"></span>
+    </div>
+    <div>
+        <strong>Categoria:</strong>
+        <span th:text="${professor.categoriaProfessor}"></span>
+    </div>
+
+    <br/>
+    <a href="/professores/listar">Voltar à lista</a>
+    <a th:href="@{/professores/editar/{id}(id=${professor.idProfessor})}">Editar</a>
+    <a th:href="@{/professores/excluir/{id}(id=${professor.idProfessor})}">Excluir</a>
+</body>
+</html>
